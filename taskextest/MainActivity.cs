@@ -5,6 +5,7 @@ using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
+using System.Threading.Tasks;
 
 namespace taskextest
 {
@@ -29,6 +30,10 @@ namespace taskextest
         {
             MenuInflater.Inflate(Resource.Menu.menu_main, menu);
             return true;
+        }
+        public ValueTask<string> Task()
+        {
+            return default;
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
