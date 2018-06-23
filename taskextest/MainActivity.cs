@@ -28,6 +28,7 @@ namespace taskextest
 
 		public override bool OnCreateOptionsMenu(IMenu menu)
         {
+            ClassLibrary1.Class1.Task();
             MenuInflater.Inflate(Resource.Menu.menu_main, menu);
             return true;
         }
